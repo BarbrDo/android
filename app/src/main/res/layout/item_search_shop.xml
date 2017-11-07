@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_7dp">
+
+        <RelativeLayout
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circle_bordered_blue">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_shop" />
+
+        </RelativeLayout>
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:layout_toLeftOf="@+id/view_2"
+            android:layout_toRightOf="@+id/iv_profile_picture"
+            android:lines="3"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/textsize_14sp" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_profile_picture"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="-7dp"
+            android:layout_toLeftOf="@+id/tv_add"
+            android:background="@color/text_light" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_15dp"
+            android:text="ADD"
+            android:textColor="@color/button_blue"
+            android:textSize="@dimen/textsize_14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

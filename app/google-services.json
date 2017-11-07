@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "407974800621",
+    "firebase_url": "https://snappy-meridian-167012.firebaseio.com",
+    "project_id": "snappy-meridian-167012",
+    "storage_bucket": "snappy-meridian-167012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407974800621:android:66e11c89ce2ec0e1",
+        "android_client_info": {
+          "package_name": "com.barbrdo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407974800621-b0tkj45edd3kn9okfrjdbhcq23rkgrfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.barbrdo.app",
+            "certificate_hash": "7bd57c0dcffadd55ba3758b9ee098bcd47f249e2"
+          }
+        },
+        {
+          "client_id": "407974800621-tuvagi4mo7hbcge0rumfc4leiafr351o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqKbXTC4E2tq9cdlA4exiJxOy4emfnEo0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407974800621-tuvagi4mo7hbcge0rumfc4leiafr351o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407974800621:android:309b60f0be8304ec",
+        "android_client_info": {
+          "package_name": "com.barbrdo.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407974800621-pm7ogq533s60jjh6vo9mq9n5g9o0ch23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.barbrdo.application",
+            "certificate_hash": "7bd57c0dcffadd55ba3758b9ee098bcd47f249e2"
+          }
+        },
+        {
+          "client_id": "407974800621-4g1dug28h7da6q5moj8m3amje85ajoiu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.barbrdo.application",
+            "certificate_hash": "31f7c16a2fb7c8061b9a6b1b2b9dbc0007f96523"
+          }
+        },
+        {
+          "client_id": "407974800621-tuvagi4mo7hbcge0rumfc4leiafr351o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqKbXTC4E2tq9cdlA4exiJxOy4emfnEo0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407974800621-tuvagi4mo7hbcge0rumfc4leiafr351o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

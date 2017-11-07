@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_20dp">
+
+    <com.barbrdo.app.customviews.TextViewRegular
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:lines="1"
+        android:text="Reason for Cancelling"
+        android:textColor="@color/button_blue"
+        android:textSize="@dimen/textsize_22sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <com.barbrdo.app.customviews.RadioButtonRegular
+            android:id="@+id/rb_no_show"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textsize_16sp"
+            android:textColor="@color/text_dark"
+            android:gravity="center"
+            android:text="@string/customer_was_a_no_show"
+            android:layout_height="wrap_content" />
+
+        <com.barbrdo.app.customviews.RadioButtonRegular
+            android:id="@+id/rb_other"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textsize_16sp"
+            android:textColor="@color/text_dark"
+            android:gravity="center"
+            android:text="@string/other"
+            android:layout_height="wrap_content" />
+
+        <com.barbrdo.app.customviews.EditTextRegular
+            android:layout_width="match_parent"
+            android:id="@+id/et_reason"
+            android:visibility="gone"
+            android:textColorHint="@color/text_light"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:textSize="@dimen/textsize_16sp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textColor="@color/text_dark"
+            android:hint="Type reason here"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

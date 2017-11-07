@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_20dp"
+    android:layout_height="wrap_content">
+
+    <com.barbrdo.app.customviews.TextViewRegular
+        android:id="@+id/tv_radius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/textsize_22sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:thumb="@drawable/thumb_red_white"
+        android:max="100"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/seekBar_radius" />
+</RelativeLayout>

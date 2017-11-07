@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_no_menu" />
+
+    <com.barbrdo.app.customviews.TextViewRegular
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/reviews"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_pay"
+            android:visibility="visible" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_no_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_35dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/textsize_18sp"
+            android:visibility="gone" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/rounded_red"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:visibility="gone"
+            android:onClick="next"
+            android:padding="@dimen/margin_10dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

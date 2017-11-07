@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:fitsSystemWindows="true">
+
+    <com.barbrdo.app.customviews.EditTextRegular
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5dp"
+        android:background="@drawable/rounded_white"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/search_white"
+        android:drawablePadding="@dimen/margin_5dp"
+        android:hint="@string/search"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:padding="@dimen/margin_13dp"
+        android:singleLine="true"
+        android:textColor="@color/text_dark"
+        android:textColorHint="@color/text_light"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_search">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <com.barbrdo.app.customviews.TextViewRegular
+                android:id="@+id/tv_no_results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_35dp"
+                android:gravity="center"
+                android:padding="@dimen/margin_10dp"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/textsize_18sp" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

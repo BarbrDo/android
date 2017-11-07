@@ -1,0 +1,9 @@
+<com.barbrdo.app.customviews.TextViewRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:lines="1"
+    android:padding="@dimen/margin_10dp"
+    android:textColor="@color/text_dark"
+    android:textSize="@dimen/textsize_18sp" />

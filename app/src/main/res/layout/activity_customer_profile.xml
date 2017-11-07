@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_no_menu" />
+
+    <com.barbrdo.app.customviews.TextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Customer Profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5dp">
+
+                <ImageView
+                    android:id="@+id/iv_profile_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imgpsh_fullsize" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_profile_bg"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:background="@drawable/rounded_bottom_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_45dp"
+                        android:layout_marginLeft="90dp"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="photosClick">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.barbrdo.app.customviews.TextViewRegular
+                                    android:id="@+id/tv_photos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5dp"
+                                    android:text="0"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="@dimen/textsize_20sp" />
+
+                                <com.barbrdo.app.customviews.TextViewRegular
+                                    android:id="@+id/tv_photos_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/photos"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="@dimen/textsize_14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="cutsClick">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.barbrdo.app.customviews.TextViewRegular
+                                    android:id="@+id/tv_cuts"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5dp"
+                                    android:text="0"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="@dimen/textsize_20sp" />
+
+                                <com.barbrdo.app.customviews.TextViewRegular
+                                    android:id="@+id/tv_cuts_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cuts"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="@dimen/textsize_14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_profile_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:background="@drawable/circle_white"
+                    android:padding="@dimen/margin_2dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_picture"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/placeholder_user" />
+
+                </RelativeLayout>
+
+                <com.barbrdo.app.customviews.TextViewRegular
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/rl_info"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:layout_toRightOf="@+id/rl_profile_picture"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_20sp" />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/margin_3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_email_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_email"
+                            android:gravity="left"
+                            android:padding="@dimen/margin_10dp"
+                            android:text="@string/email"
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:gravity="right"
+                            android:lines="1"
+                            android:minWidth="@dimen/margin_10dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:textColor="@color/text_dark"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_phone_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_phone"
+                            android:gravity="left"
+                            android:padding="@dimen/margin_10dp"
+                            android:text="@string/phone"
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:gravity="right"
+                            android:lines="1"
+                            android:maxLength="15"
+                            android:onClick="callUser"
+                            android:padding="@dimen/margin_10dp"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/textsize_14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_licence"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/divider"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_licence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_licence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_licence_number"
+                            android:gravity="left"
+                            android:padding="@dimen/margin_10dp"
+                            android:text="@string/licence_number"
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_licence_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_10dp"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_member_since_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_10dp"
+                            android:text="@string/member_since"
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:id="@+id/tv_member_since"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_toRightOf="@+id/tv_member_since_title"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_10dp"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_barber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

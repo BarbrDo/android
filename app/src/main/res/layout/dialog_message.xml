@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_progress"
+        android:background="@color/button_blue"
+        android:padding="@dimen/margin_7dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_profile_picture"
+            android:layout_width="45dp"
+            android:background="@color/button_blue"
+            android:layout_height="45dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_picture"
+                android:layout_width="45dp"
+                android:background="@color/button_blue"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_user" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/rl_profile_picture"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.barbrdo.app.customviews.TextViewRegular
+                    android:id="@+id/tv_username"
+                    android:background="@color/button_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp">
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/textsize_16sp" />
+
+        <com.barbrdo.app.customviews.EditTextRegular
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone"
+            android:background="@drawable/bordered_blue"
+            android:hint="Type message here"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_light"
+            android:textSize="@dimen/textsize_16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_below="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_16sp"
+            android:padding="@dimen/margin_10dp"
+            android:clickable="true"
+            android:text="Close"
+            android:background="@color/button_dark_gray"
+            android:layout_height="wrap_content" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_reply"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/margin_1dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_16sp"
+            android:padding="@dimen/margin_10dp"
+            android:text="@string/reply"
+            android:background="@color/button_dark_gray"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

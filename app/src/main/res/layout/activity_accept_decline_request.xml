@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_blue">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:src="@drawable/logo_top" />
+
+    <RelativeLayout
+        android:id="@+id/rl_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_25dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.barbrdo.app.customviews.CircularProgressBar
+                android:id="@+id/circularProgressbar"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#333333"
+                app:cpb_background_progressbar_width="12dp"
+                app:cpb_progressbar_color="#2DBAD4"
+                app:cpb_progressbar_width="12dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_map_image"
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_services_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_7dp"
+            android:text="Services:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_services_header"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_services"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_7dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_15dp">
+
+            <com.barbrdo.app.customviews.TextViewRegular
+                android:id="@+id/tv_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_deny_red_medium"
+                android:gravity="center"
+                android:onClick="decline"
+                android:text="@string/decline"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16sp" />
+
+            <RelativeLayout
+                android:id="@+id/iv_slider"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_bordered_blue"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_shop" />
+            </RelativeLayout>
+
+            <com.barbrdo.app.customviews.TextViewRegular
+                android:id="@+id/tv_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_green_check_medium"
+                android:gravity="center"
+                android:onClick="accept"
+                android:text="@string/accept"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16sp" />
+
+            <SeekBar
+                android:id="@+id/sb_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_20dp"
+                android:visibility="gone"
+                android:paddingRight="@dimen/margin_20dp"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/progress_slider"
+                android:thumb="@drawable/round_app_icon" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

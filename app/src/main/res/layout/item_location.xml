@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.barbrdo.app.customviews.TextViewRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:padding="@dimen/margin_7dp"
+    android:textColor="@color/text_dark"
+    android:textSize="@dimen/textsize_16sp" />

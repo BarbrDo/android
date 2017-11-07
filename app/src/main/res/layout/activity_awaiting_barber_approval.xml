@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_blue">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:src="@drawable/logo_top" />
+
+    <RelativeLayout
+        android:id="@+id/rl_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_25dp"
+       >
+
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.barbrdo.app.customviews.CircularProgressBar
+                android:id="@+id/circularProgressbar"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#333333"
+                app:cpb_background_progressbar_width="12dp"
+                app:cpb_progressbar_color="#2DBAD4"
+                app:cpb_progressbar_width="12dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_picture"
+                android:layout_width="132dp"
+                android:scaleType="centerCrop"
+                android:layout_height="132dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/placeholder_user" />
+
+            <ImageView
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_transparent" />
+
+            <com.barbrdo.app.customviews.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Contacting\nBarber"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/textsize_16sp" />
+
+        </RelativeLayout>
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_services_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_7dp"
+            android:text="Services:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_services_header"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_services"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_7dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18sp" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:drawableTop="@drawable/ic_cancel_black_24px"
+            android:gravity="center"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_not_responding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_denied"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_deny_red_large" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_denied"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_7dp"
+            android:text="@string/we_re_sorry_but_the_barber_ncannot_take_your_request_at_nthis_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_20sp" />
+
+        <com.barbrdo.app.customviews.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:background="@drawable/bordered_white"
+            android:onClick="searchAgain"
+            android:paddingBottom="@dimen/margin_10dp"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_15dp"
+            android:clickable="true"
+            android:paddingTop="@dimen/margin_10dp"
+            android:text="@string/search_again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_no_menu" />
+
+    <com.barbrdo.app.customviews.TextViewRegular
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/invite_customer_to_barbrdo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_3dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:elevation="3dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15dp">
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_20dp"
+                            android:text="Send BarbrDo invitation through"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/textsize_16sp" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_marginBottom="@dimen/margin_10dp"
+                            android:id="@+id/ll_customer_barber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_60dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_customer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/customer_active_blue" />
+
+                                <com.barbrdo.app.customviews.TextViewRegular
+                                    android:id="@+id/tv_customer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_2dp"
+                                    android:text="@string/customer"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="@dimen/textsize_12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_barber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/barber" />
+
+                                <com.barbrdo.app.customviews.TextViewRegular
+                                    android:id="@+id/tv_barber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_2dp"
+                                    android:text="@string/barber"
+                                    android:textColor="@color/text_dark"
+                                    android:textSize="@dimen/textsize_12sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.barbrdo.app.customviews.EditTextRegular
+                            android:id="@+id/et_email_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_15dp"
+                            android:drawableLeft="@drawable/username"
+                            android:drawablePadding="@dimen/margin_5dp"
+                            android:hint="@string/email_address"
+                            android:imeOptions="actionDone"
+                            android:inputType="textEmailAddress"
+                            android:padding="@dimen/margin_10dp"
+                            android:textColor="@color/text_dark"
+                            android:textColorHint="@color/gray_med_light" />
+
+                        <com.barbrdo.app.customviews.TextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_5dp"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:text="OR"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/textsize_16sp" />
+
+                        <com.barbrdo.app.customviews.EditTextRegular
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_15dp"
+                            android:drawableLeft="@drawable/username"
+                            android:drawablePadding="@dimen/margin_5dp"
+                            android:hint="@string/mobile_number"
+                            android:maxLength="10"
+                            android:inputType="phone"
+                            android:imeOptions="actionDone"
+                            android:padding="@dimen/margin_10dp"
+                            android:textColor="@color/text_dark"
+                            android:textColorHint="@color/gray_med_light" />
+
+                    </LinearLayout>
+
+                    <com.barbrdo.app.customviews.TextViewRegular
+                        android:id="@+id/tv_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_message"
+                        android:background="@color/button_dark_gray"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_10dp"
+                        android:clickable="true"
+                        android:onClick="sendInvitation"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_15sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_margin="@dimen/margin_5dp"
+                android:id="@+id/ll_invite_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp"
+                android:background="@drawable/white_bg"
+                android:orientation="vertical">
+
+                <com.barbrdo.app.customviews.TextViewRegular
+                    android:id="@+id/tv_invite_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:text="@string/invite_barbers_to_download_the_barbrdo_app_and_when_they_book_their_first_appointment_you_receive_a_5_amazon_gift_card_as_a_token_of_our_appreciation"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/textsize_16sp" />
+
+
+                <com.barbrdo.app.customviews.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|right"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:text="@string/the_barbrdo_team"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/textsize_16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

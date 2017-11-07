@@ -1,0 +1,367 @@
+<resources>
+    <string name="app_name">BarbrDo</string>
+
+    <!-- Network String Starts here -->
+    <string name="network_service_message_title">Network connection</string>
+    <string name="network_service_message">Make sure you\'re connected to a Wi-Fi or mobile network and try again.</string>
+
+    <!-- ShowAlertDialog String Starts here -->
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="discard">DISCARD</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="operation_cancelled">Operation cancelled.</string>
+
+    <string name="berlin_sans_fb_bold">Berlin_Sans_FB_Bold.ttf</string>
+    <string name="berlin_sans_fb_regular">Berlin_Sans_FB_Regular.ttf</string>
+
+    <string name="error_email_empty">Please enter email.</string>
+    <string name="error_email_invalid">Please enter valid email.</string>
+    <string name="error_empty_password">Please enter password.</string>
+    <string name="error_password_length">Password must be of 6 characters.</string>
+    <string name="error_first_name_empty">Please enter first name.</string>
+    <string name="error_last_name_empty">Please enter last name.</string>
+    <string name="error_password_match">Passwords doesn\'t match.</string>
+    <string name="error_mobile_number_empty">Please enter mobile number.</string>
+    <string name="error_mobile_licence_empty">Please enter licence number.</string>
+    <string name="error_shop_name_empty">Please enter shop name.</string>
+    <string name="error_address_empty">Please enter address.</string>
+    <string name="error_city_empty">Please enter city.</string>
+    <string name="error_state_empty">Please enter state.</string>
+    <string name="error_zip_empty">Please enter zip code.</string>
+    <string name="error_mobile_invalid">Please enter valid mobile number.</string>
+    <string name="error_name_empty">Please enter name on card.</string>
+    <string name="error_card_empty">Please enter card number.</string>
+    <string name="error_expiry_empty">Please enter expiry date.</string>
+    <string name="error_cvv_empty">Please enter CVV.</string>
+    <string name="error_card_invalid">Please enter valid card number.</string>
+    <string name="error_expiry_invalid">Please enter valid expiry date.</string>
+    <string name="error_event_title_empty">Please enter event title.</string>
+
+    <string name="work_in_progress">Work in progress</string>
+    <!-- Facebook Settings -->
+    <!--<string name="facebook_app_id">653227411528324</string>-->
+    <string name="facebook_app_id">497909777242211</string>
+    <string name="forgot_password_l">Forgot Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="customer">Customer</string>
+    <string name="barber">Barber</string>
+    <string name="barber_shop">Barber Shop</string>
+    <string name="register">Register</string>
+    <string name="activate_account">Account Activation</string>
+    <string name="verify">Verify</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="gallery">Gallery</string>
+    <string name="notifications">Notifications</string>
+    <string name="exit">Exit</string>
+    <string name="exit_application">Exit Application</string>
+    <string name="upcoming">UPCOMING</string>
+    <string name="completed">COMPLETED</string>
+    <string name="do_you_really_want_to_logout_application">Do you really want to logout from the application?</string>
+    <string name="login">LOGIN</string>
+    <string name="register_c">REGISTER</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Signup</string>
+    <string name="a_temporary_password_has_been_sent_to_your_email_address">A temporary password has been\nsent to your email address.</string>
+    <string name="signup">SIGNUP</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="no_haircuts_scheduled">No Haircuts Scheduled</string>
+    <string name="upcoming_appointment_detail">Upcoming Appointment Detail</string>
+    <string name="appointment_booked">Appointment Booked</string>
+    <string name="barber_shop_address">Barber Shop Address</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="summary_of_services">Summary of Services</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="your_barber">Your Barber</string>
+    <string name="gallery_folder_name">BarbrDo</string>
+    <string name="add_image">Add Image</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="cancel_">Cancel</string>
+    <string name="view_shops">VIEW SHOPS</string>
+    <string name="view_barbers">VIEW BARBERS</string>
+    <string name="search">Search</string>
+    <string name="no_shops_could_be_found">No shops found</string>
+    <string name="please_tap_back_again_to_exit">Please tap BACK again to exit</string>
+    <string name="details">Details</string>
+    <string name="book">Book</string>
+    <string name="google_maps_key">AIzaSyDvdip8Rb5DveHCWWgVuGBMXqnzPn0ONL8</string>
+    <string name="no_barbers_could_be_found">No barbers could be found</string>
+    <string name="book_an_appointment">Book an Appointment</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="next">Next</string>
+    <string name="pay_later">Pay Later</string>
+    <string name="cuts">Cuts</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="member_since">Member Since</string>
+    <string name="photos">Photos</string>
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit">Edit</string>
+    <string name="contact_barber">Contact Barber</string>
+    <string name="go_home">Go Home</string>
+    <string name="full_name">Full Name</string>
+    <string name="overall_ratings">Overall Ratings</string>
+    <string name="licence_number">License Number</string>
+    <string name="shop_">shop</string>
+    <string name="barber_">barber</string>
+    <string name="customer_">customer</string>
+    <string name="financial_center">Financial Center</string>
+    <string name="manage_calendar">Manage Calendar</string>
+    <string name="search_for_a_chair">Search for a Chair</string>
+    <string name="manage_requests">Manage Requests</string>
+    <string name="manage_services">Manage Services</string>
+    <string name="invite_customer">Invite Customer</string>
+    <string name="pending">PENDING</string>
+    <string name="confirmed">CONFIRMED</string>
+    <string name="request_appointment">Request Appointment</string>
+    <string name="save">Save</string>
+    <string name="pending_appointment_detail">Pending Appointment Details</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="your_customer">Your Customer</string>
+    <string name="confirm">Confirm</string>
+    <string name="mark_as_complete">Mark as Complete</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="which_shop_do_you_want_to_cut_at">Which shop do you want to cut at?</string>
+    <string name="request">Request</string>
+    <string name="available">available</string>
+    <string name="chair_details">Chair Details</string>
+    <string name="your_request_has_been_submitted">Your request has been submitted.</string>
+    <string name="thank_you">Thank you</string>
+    <string name="please_wait_for_confirmation">Please wait for confirmation.</string>
+    <string name="pending_chair_request_details">Pending Chair Request Details</string>
+    <string name="re_book">Re-book</string>
+    <string name="customer_profile">Customer Profile</string>
+    <string name="barber_profile">Barber Profile</string>
+    <string name="rate_customer">Rate Customer</string>
+    <string name="your_rating">Your Rating</string>
+    <string name="completed_appointment_details">Completed Appointment Details</string>
+    <string name="i_am_running_late_by">I am running late by</string>
+    <string name="min">min</string>
+    <string name="add_optional_message">Add optional message</string>
+    <string name="send">Send</string>
+    <string name="call_barber">Call Barber</string>
+    <string name="can_we_move_the_appointment_back_by">Can we move the appointment back by</string>
+    <string name="contact_shop">Contact Shop</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="are_you_sure_you_want_to_cancel_request">Are you sure you want to cancel this request?</string>
+    <string name="reschedule_appointment">Reschedule Appointment</string>
+    <string name="are_you_sure_you_want_to_reschedule_appointment">Are you sure you want to reschedule this appointment?</string>
+    <string name="these_shops_are_requesting_your_services">These Shops are Requesting Your Services</string>
+    <string name="manage_my_services">Manage My Services</string>
+    <string name="no_services_listed">No Services Listed</string>
+    <string name="contact_customer">Contact Customer</string>
+    <string name="view_daily_calendar">View Daily Calendar</string>
+    <string name="contact_barbr_do_office">Contact BarbrDo Office</string>
+    <string name="manage_chairs">Manage Chairs</string>
+    <string name="what_day_are_you_looking_for">What day are you looking for?</string>
+    <string name="type_message_here">Type message here...</string>
+    <string name="search_radius">Search Radius</string>
+    <string name="reviews">Reviews</string>
+    <string name="delete">Delete</string>
+    <string name="delete_image">Delete Image</string>
+    <string name="are_you_sure_you_want_to_delete_this_image">Are you sure you want to delete this image?</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="manage">Manage</string>
+    <string name="no_chairs_added">No Chairs Added</string>
+    <string name="invite_customer_to_barbrdo">Invite Customer to BarbrDo</string>
+    <string name="invite_barber_to_barbrdo">Invite Barber to BarbrDo</string>
+    <string name="delete_service">Delete Service</string>
+    <string name="are_you_sure_you_want_to_delete_service">Are you sure you want to delete this service?</string>
+    <string name="confirm_appointment">Confirm Appointment</string>
+    <string name="are_you_sure_you_want_to_confirm_appointment">Are you sure you want to confirm this appointment?</string>
+    <string name="are_you_sure_you_want_to_complete_appointment">Are you sure you want to complete this appointment?</string>
+    <string name="chair_split_shop_percentage">Chair Split - Shop Percentage</string>
+    <string name="rent_chair_weekly_monthly">Rent Chair Weekly/Monthly</string>
+    <string name="mark_chair_as_booked">Mark Chair as Booked</string>
+    <string name="search_for_specific_barber">Search for Specific Barber</string>
+    <string name="post_chair_to_all_barbers">Post Chair to all Barbers</string>
+    <string name="search_for_barbers">Search for Barbers</string>
+    <string name="remove_chair">Remove Chair</string>
+    <string name="are_you_sure_you_want_to_remove_chair">Are you sure you want to remove this chair?</string>
+    <string name="request_to_remove_barber">Request to Remove Barber</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="share">Share</string>
+    <string name="manage_my_calendar">Manage My Calendar</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="barber_chair_requests">Barber Chair Requests</string>
+    <string name="no_requests_could_be_found">No requests could be found.</string>
+    <string name="barbrdo">BarbrDo</string>
+    <string name="call_us">Call Us</string>
+    <string name="contact_barbrdo_office">Contact BarbrDo Office</string>
+    <string name="change_password">Change Password</string>
+    <string name="percentage">percentage</string>
+    <string name="weekly_">weekly</string>
+    <string name="monthly_">monthly</string>
+    <string name="no_gallery_images_found">No gallery pictures could be found.</string>
+    <string name="please_add_chair_information_in_order_to_post_chair_to_barbers">Please add chair information in order to post chair to barbers.</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="payment_amount">Payment amount :</string>
+    <string name="name_on_card">Name on Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="i_agree_the_terms_amp_conditions"><![CDATA[I agree the Terms & Conditions]]></string>
+    <string name="cvv">CVV</string>
+    <string name="create_event">Create Event</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="mark_as_day_off">Mark as Day Off</string>
+    <string name="start_time_of_event">Start Time of Event</string>
+    <string name="end_time_of_event">End Time of Event</string>
+    <string name="repeat">Repeat</string>
+    <string name="are_you_sure_you_want_to_mark_this_chair_booked">Are you sure you want to mark this chair as booked?</string>
+    <string name="zip">Zip</string>
+    <string name="there_are_no_email_clients_installed">There are no email clients installed.</string>
+    <string name="rate_your_experience">Rate Your Experience</string>
+    <string name="appointment_on">Appointment On</string>
+    <string name="rate_barber">Rate Barber</string>
+    <string name="please_rate_your_barber_experience">Please rate your barber experience</string>
+    <string name="chair_split">Chair Split</string>
+    <string name="chair_rental">Chair Rental</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="stripe_key">pk_test_fswpUdU8DBIKbLz1U637jNF7</string>
+    <string name="decline_appointment">Decline Appointment</string>
+    <string name="are_you_sure_you_want_to_decline_appointment">Are you sure you want to decline this appointment?</string>
+    <string name="decline_request">Decline Request</string>
+    <string name="are_you_sure_you_want_to_decline_request">Are you sure you want to decline this request?</string>
+    <string name="cancel_subscription">Cancel Subscription</string>
+    <string name="are_you_sure_you_want_to_cancel_subscription">Are you sure you want to cancel this subscription?</string>
+    <string-array name="days_array">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="days_full_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="late_min">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+    </string-array>
+
+    <string-array name="hours">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string name="please_agree_to_the_terms_conditions"><![CDATA[Please agree to the Terms & Conditions.]]></string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="chair_calendar">Chair Calendar</string>
+    <string name="chair_already_posted">Chair already posted.</string>
+    <string name="finance_center">Finance Center</string>
+    <string name="sales_summary">Sales Summary</string>
+    <string name="total_sale">Total Sale</string>
+    <string name="current_month">Current Month</string>
+    <string name="current_week">Current Week</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="total_appointments">Total Appointments</string>
+    <string name="sales">Sales</string>
+    <string name="booked">booked</string>
+    <string name="remove_barber">Remove Barber</string>
+    <string name="are_you_sure_you_want_to_remove_barber">Are you sure you want to remove this barber?</string>
+    <string name="delete_event">DELETE EVENT</string>
+    <string name="invite_barber">Invite Barber</string>
+    <string name="favorite_barbers">Favorite Barbers</string>
+    <string name="contact_babrdo">Contact BarbrDo</string>
+    <string name="map_view">MAP VIEW</string>
+    <string name="list_view">LIST VIEW</string>
+    <string name="select_your_services">Select Your Services</string>
+    <string name="i_ll_be_there_in">I\'ll Be There In..</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="search_again">Search Again</string>
+    <string name="we_re_sorry_but_the_barber_ncannot_take_your_request_at_nthis_time">We\'re sorry, but the barber\ncannot take your request at\nthis time.</string>
+    <string name="no_favorite_barbers_added">No Favorite Barbers Added.</string>
+    <string name="invite_barbers_to_download_the_barbrdo_app_and_when_they_book_their_first_appointment_you_receive_a_5_amazon_gift_card_as_a_token_of_our_appreciation">Invite a Barber to Download the BarbrDo app and when they accept their first request we will email you a $5 Amazon Gift Card as a token of our appreciation.</string>
+    <string name="the_barbrdo_team">The BarbrDo Team</string>
+    <string name="licensed_since">Licensed Since</string>
+    <string name="bio">Bio</string>
+    <string name="invite_to_barbrdo">Invite to BarbrDo</string>
+    <string name="manage_shop">Manage Shops</string>
+    <string name="invite_10_customers">Invite 10 customers and we will email you a $5 Amazon Gift Card when they register.</string>
+    <string name="go_online">Go Online</string>
+    <string name="total_revenue_today">Total Revenue Today</string>
+    <string name="total_cuts_today">Total Cuts Today</string>
+    <string name="shops_you_are_associated_with">Shops You Are Associated With</string>
+    <string name="phone_or_e_mail">Phone or E-mail</string>
+    <string name="send_invitation">Send Invitation</string>
+    <string name="haircut">Haircut</string>
+    <string name="shave">Shave</string>
+    <string name="shop">Shop</string>
+    <string name="go_online_now">Go Online Now</string>
+    <string name="go_offline">Go Offline</string>
+    <string name="decline">Decline</string>
+    <string name="next_in_chair">Next In Chair</string>
+    <string name="check_in">CHECK-IN</string>
+    <string name="send_message">Send Message</string>
+    <string name="map_it">Map It</string>
+    <string name="were_you_next_in_the_chair">Were you next in the chair?</string>
+    <string name="submit_rating">Submit Rating</string>
+    <string name="manage_your_shops">Manage Your Shops</string>
+    <string name="add_a_shop">Add a Shop</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="reply">Reply</string>
+    <string name="delete_shop">Delete Shop</string>
+    <string name="are_you_sure_you_want_to_delete_shop">Are you sure you want to delete this appointment?</string>
+    <string name="customer_was_a_no_show">Customer was a no show</string>
+    <string name="other">Other</string>
+    <string name="please_enter_shop_name">Please enter shop name.</string>
+    <string name="please_enter_city">Please enter city.</string>
+    <string name="please_select_state">Please select state.</string>
+    <string name="please_enter_zip">Please enter zip.</string>
+    <string name="can_t_find_the_shop_you_are_looking_for_add_a_new_shop">Can\'t find the shop you are looking for? Add a new shop</string>
+    <string name="no_shops_found">No Shops Found</string>
+    <string name="street_address">Street Address</string>
+    <string name="please_enter_street_address">Please enter street address.</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="no_shops_associated">No Shops Associated</string>
+    <string name="oops_we_are_sorry_but_it_looks_like_the_customer_had_to_cancel_the_request">Oops, we are sorry but it looks like the customer had to cancel the request.</string>
+</resources>

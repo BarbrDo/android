@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#354BA1</color>
+    <color name="colorPrimaryDark">#213877</color>
+    <color name="colorAccent">#E3262F</color>
+    <color name="text_gray">#9799A3</color>
+    <color name="text_dark">#565656</color>
+    <color name="text_light">#A0A0A0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue_light">#6892FD</color>
+    <color name="hint_gray">#9799A3</color>
+    <color name="transparent_black">#55000000</color>
+    <color name="navigation_drawer_top">#484848</color>
+    <color name="navigation_drawer">#404040</color>
+    <color name="divider">#646060</color>
+    <color name="button_blue">#3556AF</color>
+    <color name="button_red">#E3262F</color>
+    <color name="gray_bg">#97A3AF</color>
+    <color name="red_bg">#c62731</color>
+    <color name="text_red">#E85D63</color>
+    <color name="text_red_min">#C6272F</color>
+    <color name="red_dark">#A8232B</color>
+    <color name="button_gray">#B4B4B4</color>
+    <color name="gray_light">#F3F3F3</color>
+    <color name="gray_med_light">#DEDEDE</color>
+    <color name="rating_bar">#E7A74B</color>
+    <color name="days_calendar_bg">#A0A0A0</color>
+    <color name="event_blue_light">#CC6892FD</color>
+    <color name="appointment_red">#CCE3262F</color>
+    <color name="event_day_off_gray">#CC9799A3</color>
+    <color name="button_dark_gray">#798591</color>
+    <color name="gray_non_selector">#D3DEE9</color>
+
+</resources>

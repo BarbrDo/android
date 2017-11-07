@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "/home/sahilsa/Documents/BarbrdoAndroid/BarbrDoLatest/BarbrDo/facebook/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 200
+                },
+                "from": {
+                    "file": "/home/sahilsa/.android/build-cache/03de620259d6a99630d16a8ebd0f6c08400b4a9f/output/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 200
+                    }
+                }
+            }
+        ]
+    }
+]
